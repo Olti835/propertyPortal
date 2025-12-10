@@ -1,0 +1,195 @@
+@import "./main.css";
+
+section {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+}
+.image-div {
+    height: 70vh;
+    position: relative;
+}
+
+.image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-div div {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #ffffff;
+}
+
+
+.euro-icon {
+    color: var(--color-accent);
+    height: 35px;
+    width: 35px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.image-div div h3 {
+    font-size: 30px;
+}
+
+.image-div div p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+}
+
+.section-body .owner-div {
+    position: sticky;
+    background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 50px;
+    top: 0;
+}
+
+
+.section-body .owner-div span {
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.section-body .owner-div .profile {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 20px;
+    color: var(--color-bg);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.specs, .about-div, .property-div, .features-div {
+    background-color: var(--color-bg);
+    padding: 20px 40px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+
+.section-body .owner-div h3 {
+    font-size: 25px;
+}
+
+.specs-cards-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.specs-cards-div div {
+    height: 140px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+
+
+.about-div h3 {
+    line-height: 50px;
+}
+
+.about-div p {
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.property-div div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.property-div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.property-div p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px var(--color-mid);
+}
+
+.property-div p span:last-child{
+    font-weight: 600;
+}
+
+.features-div ul {
+    margin-top: 5px;
+}
+
+.features-div ul li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.features-div ul li::marker {
+    color: var(--color-accent);
+    font-size: 20px;
+}   
+
+.owner-contact-div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.owner-div span {
+    font-size: 17px;
+}
+
+.owner-contact-div svg {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.owner-contact-div a {
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    margin-bottom: 20px;
+}
