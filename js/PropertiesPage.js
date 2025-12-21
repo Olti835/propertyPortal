@@ -60,8 +60,10 @@ function generatePropertyCard(id, title, image, location, price, specifics, date
                             <span>Icon - ${specifics.area} sqft</span>
                         </div>
                         <p id="date">Posted: <b>${date}</b></p>
-                        <a href="http://127.0.0.1:5500/html/PropertyPage.html?id=${id}">View</a>
-                    `;
+                        <div class="view-btn">
+                            <a href="http://127.0.0.1:5500/html/PropertyPage.html?id=${id}">View</a>
+                        </div>
+                        `;
     container.appendChild(element);
 }
 

@@ -102,9 +102,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 60vh;
     border-radius: 30px;
     box-shadow: 0 4px 12px var(--color-mid);
     margin: 20px 10px;
+    position: relative;
 }
 
 .page section div:last-child .card .card-body {
@@ -129,26 +131,33 @@
 }
 
 .page section div:last-child .card img {
-    height: 60%;
+    height: 50%;
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
 }
 
-.page section div:last-child .card a {
+.page section div:last-child .card .view-btn {
     padding: 15px 0;
     width: 95%;
     margin: 10px auto;
     border-radius: 10px;
-    outline: none;
-    border: 0;
     cursor: pointer;
     background-color: var(--color-mid);
-    color: #ffffff;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2px;
+    left: 8px;
 }
 
-.page section div:last-child .card a:hover {
+.page section div:last-child .card .view-btn a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.page section div:last-child .card .view-btn:hover {
     background-color: var(--color-dark);
     transition: ease-in-out 200ms;
 }
@@ -198,12 +207,7 @@
         .page section div:last-child .card .card-body, .page section div:last-child .card .card-specs {
             font-size: 14px;
         }
-
-        .page section div:last-child .card a {
-            padding: 10px 0;
-        }
 }
-
 
 @media screen and (max-width: 1024px) {
         .page section div:last-child {
@@ -211,16 +215,12 @@
         }
 
         .page section div:last-child .card .card-body h5{
-            font-size: 20px;
+            font-size: 25px;
             margin-top: 10px;
         }
 
         .page section div:last-child .card .card-body, .page section div:last-child .card .card-specs {
-            font-size: 12px;
-        }
-
-        .page section div:last-child .card a {
-            padding: 10px 0;
+            font-size: 15px;
         }
 
         .page #header-page {
@@ -253,22 +253,18 @@
 
 @media screen and (max-width: 720px) {
         .page section div:last-child {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
 
         .page section div:last-child .card .card-body h5{
-            font-size: 20px;
+            font-size: 25px;
             margin-top: 10px;
         }
 
+
         .page section div:last-child .card .card-body, .page section div:last-child .card .card-specs {
-            font-size: 10px;
+            font-size: 15px;
         }
-
-        .page section div:last-child .card a {
-            padding: 8px 0;
-        }
-
 
         .page section .filter-div span {
             font-size: 12px;
