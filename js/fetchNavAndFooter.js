@@ -6,6 +6,11 @@ fetch('../html/Navbar.html')
     initNavbar();
 });
 
+fetch('../html/Footer.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById("footer-placeholder").innerHTML = data;
+})
 
 function initNavbar() {
     

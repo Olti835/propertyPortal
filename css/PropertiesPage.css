@@ -21,7 +21,8 @@
 
 .page #header-page h3 {
     font-size: 40px;
-    line-height: 20px;
+    height: 60px !important;
+    padding-top: 5px;
 }
 
 .page #header-page p {
