@@ -22,12 +22,12 @@ A website which allows user to buy, rent and sell real estate properties.
 
 ## Project Structure
 
-├── css/ Stylesheets
-├── html/ HTML pages
-├── js/ JavaScript modules
-├── images/ Property and UI images
-├── properties.json Dataset of properties
-├── homePage.html Entry point
+- css/ Stylesheets
+- html/ HTML pages
+- js/ JavaScript modules
+- images/ Property and UI images
+- properties.json Dataset of properties
+- homePage.html Entry point
 
 ## Usage
 
